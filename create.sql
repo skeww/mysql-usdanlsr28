@@ -174,7 +174,7 @@ CREATE TABLE WEIGHT (
 	Amount			DECIMAL(5,3)	NOT NULL,	-- unit modifier (e.g. 1 in "1 cup")
 	Msre_Desc		CHAR(84)		NOT NULL,	-- description (e.g. cup, diced, 1" pieces)
 	Gm_Wgt			DECIMAL(7,1)	NOT NULL,	-- gram weight
-	Num_Data_Pts	Decimal(3,0),				-- number of data points
+	Num_Data_Pts	Decimal(4,0),				-- number of data points
 	Std_Dev			Decimal(7,3),				-- standard deviation
 	CONSTRAINT WEIGHT_PK PRIMARY KEY(NDB_No,Seq)
 
